@@ -30,6 +30,12 @@
         rel="stylesheet">
     <!-- Font Imports -->
 
+    <!-- Font Awesome Icon Import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome Icon Import -->
+
     <!-- ########################################################### Clean Code, Responsividade, API integration, README ########################################################### -->
     <!-- Color Scheme: #B49B2C - 25% Transparency; #686931; #1E1E1E -->
 </head>
@@ -114,59 +120,84 @@
 
         </div>
 
-        <div id="secondSection" style="height: 600px; width: 100%; display: flex;">
+        <div id="secondSection" style="height: 600px; width: 100%; display: flex;" class="container-fluid p-0">
             
-            <div id="secondLeft" style="height: 600px; width: 100%; overflow: hidden; display: flex; justify-content: flex-start; align-items: center;">
+            <div id="secondLeft" style="height: 600px; overflow: hidden; display: flex; justify-content: flex-start; align-items: center;" class="col-5">
                 <!-- image -->
-                <img src="./images/70f6b786bb5d600e9c82037af1a02e4dc2f4f5c4.jpg" alt="van" class="image-fluid" style="max-height: 100%; max-width: 100%; object-fit: cover; transform: scale(1.4);">
+                <img src="./images/70f6b786bb5d600e9c82037af1a02e4dc2f4f5c4.jpg" alt="van" class="image-fluid" style="position: static; height: 100%; width: 100%; object-fit: cover; transform: scale(1);">
             </div>
 
-            <div id="secondRight" style="width: 3260px; height: 600px; background-color: black;">
+            <div id="secondRight" style="background-color: black;" class="col-7">
 
-                <div id="secondRightTextBtn">
+                <div id="secondRightTextBtn" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 600px;">
                     <!-- centered text + button -->
+                     <h2 style="color: white; text-align: center; font-weight: 600; font-size: 35px; letter-spacing: 2px; width: 500px;">Descubra o seu novo escritório</h2>
+                     <button type="button" class="btn mt-4 btn-outline-dark" style="color: white; border: 3px solid white; width: 350px; height: 85px; border-radius: 50px; font-size: 30px; letter-spacing: 2px; font-family: 'Jura', sans-serif; font-weight: 600;">Descobrir</button>
                 </div>
 
-                <div id="secondRightUpArrow">
+                <div id="secondRightUpArrow" class="position-relative">
                     <!-- up arrow icon round outline -->
+                    <img src="./images/arrow-up-circle.svg" class="position-absolute bottom-0 end-0" style="height: 50px; filter: invert(); left: 92%; margin-bottom: 55px; transform: scale(1.4);"></img>
                 </div>
 
             </div>
 
         </div>
 
-        <div id="thirdSection">
+        <div id="thirdSection" style="height: 650px; overflow: hidden;" class="container-fluid p-0">
+            <div class="row p-0">
+                <div id="thirdLeft" class="col-6" style="background-color: rgba(180, 155, 44, 0.25); height: 650px;">
 
-            <div id="thirdLeft">
+                    <div id="thirdLeftTextBtn" style="display: flex; flex-direction: column; align-items: center; justify-content: center;  height: 650px;">
+                        <!-- centered text + button -->
+                        <h2 style="color: black; text-align: center; font-weight: 700; font-size: 35px; letter-spacing: 2px; width: 500px;">Temos destinos especiais para você</h2>
+                        <button type="button" class="btn mt-4 btn-outline-dark" style="border: 4px solid black; width: 350px; height: 85px; border-radius: 50px; font-size: 30px; letter-spacing: 2px; font-family: 'Jura', sans-serif; font-weight: 700;">Explorar</button>
+                    </div>
 
-                <div id="thirdLeftTextBtn">
-                    <!-- centered text + button -->
+                    <div id="thirdLeftUpArrow" class="position-relative">
+                        <!-- up arrow icon round outline -->
+                        <img src="./images/arrow-up-circle.svg" class="position-absolute bottom-0 start-0" style="height: 50px; transform: scale(1.4); margin-bottom: 55px; left: 100px; margin-left: 25px;"></img>
+                    </div>
+
                 </div>
 
-                <div id="thirdLeftUpArrow">
-                    <!-- up arrow icon round outline -->
+                <div id="thirdRight" class="col-6 p-0" style="height: 650px; overflow: hidden; display: flex; justify-content: flex-start; align-items: center;">
+                    <!-- image -->
+                    <img src="./images/05bccec0e9dc048e1c9b13db22060ff92abe71aa.jpg" alt="forest" class="image-fluid" style="position: static; width: 100%; height: 100%; object-fit: cover; transform: scale(1);">
                 </div>
-
             </div>
-
-            <div id="thirdRight">
-                <!-- image -->
-            </div>
-
         </div>
 
-        <div id="blogSection">
+        <div id="blogSection" style="height: 750px; overflow: hidden;" class="container-fluid p-0 position-relative">
             <!-- image + centered button -->
-            <div id="blogUpArrow">
+            <img src="./images/ead2fcb0b8f7592bf3f5a9687bfa209fac920389.jpg" alt="forest" class="image-fluid" style="position: static; width: 100%; height: 100%; object-fit: cover; transform: scale(1);">
+            
+            <div id="blogBtn" style="display: flex; flex-direction: column; align-items: center; justify-content: center;  height: 650px;" class="position-absolute text-center top-50 start-50 translate-middle"> 
+                <button type="button" class="btn mt-4 btn-dark" style="color: white; width: 350px; height: 85px; border-radius: 50px; font-size: 30px; letter-spacing: 2px; font-family: 'Jura', sans-serif; font-weight: 700;">BLOG</button>
+            </div>
+
+            <div id="blogUpArrow" class="position-relative">
                 <!-- up arrow icon outline -->
+                <img src="./images/arrow-up-circle.svg" class="position-absolute bottom-0 end-0" style="height: 50px; left: 95%; margin-bottom: 55px; transform: scale(1.4);"></img>
             </div>
 
         </div>
 
-        <div id="footer">
+        <div id="footer" style="height: 300px; background-color: black; display: flex; flex-direction: column; justify-content: center; align-items: center;">
             
-            <div id="footerContent">
+            <div id="footerTopText" style="height: 150px; width: 450px; display: flex; justify-content: center; padding-left: 30px; padding-top: 50px;">
                 <!-- centered text + social media icons + footer text -->
+                <h2 style="color: white; font-weight: 600; font-size: 35px; letter-spacing: 0px;">LIVING AROUND</h2>
+            </div>
+
+            <div id="footerMiddleIcons" style="height: 250px; width: 400px; display: flex; flex-direction: row; justify-content: center; padding-top: 20px;">
+                <i class="fa-brands fa-square-facebook" style="font-size: 75px; color: rgb(90, 90, 90);"></i>
+                <i class="fa-brands fa-square-instagram" style="font-size: 75px; color: rgb(90, 90, 90);"></i>
+                <i class="fa-brands fa-square-x-twitter" style="font-size: 75px; color: rgb(90, 90, 90);"></i>
+            </div>
+
+            <div id="footerBottomText" style="height: 150px; width: 450px; display: flex; justify-content: center; padding-left: 70px;">
+                <h2 style="color: white; font-weight: 600; font-size: 17px; letter-spacing: 0px;">Power by Cesae Digital</h2>
             </div>
 
         </div>
